@@ -73,3 +73,22 @@ Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Communi
 
 8- Appuyer sur "create". 
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/Create.png)
+
+9- Renseigner les informations suivantes : 
+    - Séléctionner General purpose VM pour le type
+    - Entrer un nom d'instance — DJBlockchain
+    - Entrer une description
+    - Séléctionner SLES12 SP2 pour l'image.
+    - Séléctionner LinuxONE-Medium pour le serveur.
+
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/LinuxONEFields.png)
+
+10- Scroller vers le bas. En dessous de "Select a SSH Key Pair" , cliquer sur Create. 
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/CreateKeyPair.png)
+
+11- Dans la pop-up, entrer un nom pour la clé SSH puis cliquer sur " Create a new key pair"
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/KeyPairName.png)
+
+12- Selon votre ordinateur, vous allez peut être recevoir une fenetre vous demandant de sauvegarder le fichier.
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SaveFile.png)
+
