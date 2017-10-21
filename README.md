@@ -1,6 +1,6 @@
 # Hyperledger Fabric and Hyperledger Composer sur LinuxONE
 
-Architecture : 
+# Architecture : 
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/FlowDiagram.png)
 
 À travers ce tutoriel, vous allez devoir : 
