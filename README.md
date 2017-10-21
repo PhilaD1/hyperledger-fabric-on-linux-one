@@ -1,6 +1,6 @@
 # Hyperledger Fabric and Hyperledger Composer sur LinuxONE
 
-# Architecture : 
+### Architecture : 
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/FlowDiagram.png)
 
 À travers ce tutoriel, vous allez devoir : 
@@ -37,6 +37,39 @@ Ce tutoriel sera divisé en trois parties:
 * Intéragir avec la blockchain grâce à votre dashboard
 
 # Workshop 
-# Scénario
+### Scénario
 
 Dans ce tutoriel, nous simulerons un thermostat et une jauge de température pour nous fournir des données de température. Dans un scénario réel, cela pourrait être un capteur de température dans votre maison ou dans un immeuble de bureaux. Le capteur peut être connecté à un thermostat réel comme Nest ou d'autres appareils domestiques intelligents via l'API. Pour empêcher les membres de la famille, les colocataires, les amis ou les enfants de trop chauffer ou de faire fonctionner la climatisation, ils doivent d'abord savoir s'ils sont autorisés à ajuster le thermostat en exécutant une transaction définie dans un contrat intelligent exécuté sur Hyperledger Fabric. Le contrat vérifiera la valeur enregistrée dans le registre pour la jauge de température afin de déterminer si le réglage du thermostat est écologique. Deuxièmement, nous allons intégrer Weather.com pour vérifier les températures actuelles et ajuster le thermostat à des paramètres idéaux en fonction des termes du contrat intelligent. 
+
+# Partie 1 - Demander l'accés à LinuxONE Community Cloud
+
+Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Community Cloud, établir un invité SLES, lancer un script d'installation et vérifier l'installation.
+
+### Demander l'accès à LinuxONE Community Cloud
+1- Dans un navigateur, se rendre sur https://developer.ibm.com/linuxone/ .
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/CommunityCloudPage.png)
+
+2- Cliquer sur "Start your trial now". 
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/StartNow.png)
+
+3- Compléter les champs requis sur la page et cliquer sur "Request your trial". 
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/GuestApplication.png)
+
+4- Vous allez arriver sur cette page. Appuyer sur "Sign In"
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SignIn.png)
+
+5- Consulter vos e-mails pour vérifier que vous avez reçu un mail de confirmation similaire à celui-ci. Vous allez avoir besoin du User Id et du password qui sont dans le mail.
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/RegistrationConfirmationEmail.png)
+
+### Créer votre invité LinuxONE
+
+6- Retour sur votre navigateur, entrer vos User Id et votre mot de passe puis cliqué sur " Sign In ".
+    - Note : Une fois connecté, vous pouvez changer votre mot de passe en cliquant sur votre nom d'utilisateur en haut à droite et en séléctionnant " account settings " 
+
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SignInUserIDPW.png)
+
+7- Depuis la page d'accueil d'IBM LinuxONE Community Cloud, séléctionner " Manage Instance " dans la partie Virtual Servers, en dessous d'Infrastructure. 
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/VirtualServers.png)
+
+8- Appuyer sur "create". 
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/Create.png)
