@@ -25,3 +25,18 @@ Ce tutoriel sera divisé en trois parties:
 
    [LinuxONE Community Cloud]: <https://github.com/IBM/hyperledger-fabric-on-linux-one#request-access-to-linuxone-community-cloud>
  
+# Partie 2 - Créer une application blockchain et générer l'API
+* Importer les composants de votre application blockchain
+* Créer votre application blockchain
+* Tester votre code
+* Déployer l'application sur Hyperledger Fabric
+* Générer l'API depuis votre application blockchain
+
+# Partie 3 - Utiliser votre API Blockchain avec NodeRED
+* Importer votre flow sur sur NodeRED
+* Intéragir avec la blockchain grâce à votre dashboard
+
+# Workshop 
+# Scénario
+
+Dans ce tutoriel, nous simulerons un thermostat et une jauge de température pour nous fournir des données de température. Dans un scénario réel, cela pourrait être un capteur de température dans votre maison ou dans un immeuble de bureaux. Le capteur peut être connecté à un thermostat réel comme Nest ou d'autres appareils domestiques intelligents via l'API. Pour empêcher les membres de la famille, les colocataires, les amis ou les enfants de trop chauffer ou de faire fonctionner la climatisation, ils doivent d'abord savoir s'ils sont autorisés à ajuster le thermostat en exécutant une transaction définie dans un contrat intelligent exécuté sur Hyperledger Fabric. Le contrat vérifiera la valeur enregistrée dans le registre pour la jauge de température afin de déterminer si le réglage du thermostat est écologique. Deuxièmement, nous allons intégrer Weather.com pour vérifier les températures actuelles et ajuster le thermostat à des paramètres idéaux en fonction des termes du contrat intelligent. 
