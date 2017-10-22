@@ -76,11 +76,11 @@ Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Communi
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/Create.png)
 
 9- Renseigner les informations suivantes : 
-    - Séléctionner General purpose VM pour le type
-    - Entrer un nom d'instance — DJBlockchain
-    - Entrer une description
-    - Séléctionner SLES12 SP2 pour l'image.
-    - Séléctionner LinuxONE-Medium pour le serveur.
+- Séléctionner General purpose VM pour le type
+- Entrer un nom d'instance — DJBlockchain
+- Entrer une description
+- Séléctionner SLES12 SP2 pour l'image.
+- Séléctionner LinuxONE-Medium pour le serveur.
 
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/LinuxONEFields.png)
 
