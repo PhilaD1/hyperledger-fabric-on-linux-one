@@ -125,31 +125,31 @@ Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Communi
 
     #### Configuration de votre Linux guest pour l'Hyperledger Fabric et l'Hyperledger Composer
 
-21. Now it is time to setup your guest! Run the following command, to move the setup script from the Github Repository to your Linux guest.
+21. Il est maintenant temps de mettre en place votre guest! Lancer la commande suivante pour déplacer le script d'installation du repository GitHub vers votre guest Linux.
 
     `wget https://raw.githubusercontent.com/IBM/HyperledgerFabric-on-LinuxOne/master/Linux1BlockchainScript.sh`
 
     ![Import script.](images/WgetSetup.png)
 
-22. Enter `ls` to confirm the file is in your directory. 
+22. Entrer `ls` pour vérifier que le fichier est bien présent. 
 
     ![View script.](images/Linux1Script.png)
 
-23. To make the file executable, run `chmod u+x Linux1BlockchainScript.sh` and then `ls` to make sure that it is showing as an executable file.
+23. Il faut maintenant rendre le fichier éxécutable, lancer `chmod u+x Linux1BlockchainScript.sh` et après `ls` pour être sur que le fichier est maintenant un éxécutable.
 
     ![Make the file executable.](images/Linux1ScriptExecutable.png)
 
-24. You're ready to run the setup script! Run the script using the following command, `./Linux1BlockchainScript.sh`. Be patient. It takes awhile!
+24. Vous êtes maintenant prêt à lancer le script d'installation avec la commande suivante : `./Linux1BlockchainScript.sh`. Il faut être un peu patient, cela prend un peu de temps.
 
 ![Run setup script.](images/RunSetupScript.png)
 
-25. The first time you run the script, it will set some permissions and environment variables that require you to exit and log in again. 
+25. La première fois que vous allez lancer le script, ce dernier va définir certaines permissions et variables d'environnement. Vous allez donc devoir vous déconnecter et vous reconnecter sur la machine.
 
-    * Exit the session by **typing** `exit`. 
+    * Quitter la session en **écrivant** `exit`. 
 
-    * **Log in** again —  `ssh -i DJBlockchain.pem linux1@xxx.xxx.x.x` where the x's correspond to your Linux guest IP.
+    * **Se connecter** à nouveau —  `ssh -i DJBlockchain.pem linux1@xxx.xxx.x.x`
 
-    * **Run** the script again — `./Linux1BlockchainScript.sh`
+    * **Relancer** une seconde fois le script — `./Linux1BlockchainScript.sh`
 
 ```
       linux1@djblockchain:~> ./Linux1BlockchainScript.sh 
@@ -158,33 +158,33 @@ Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Communi
       Some changes have been made that require you to log out and log back in.
       Please do this now and then re-run this script.
 ```
-26. It's completed when the command line returns. It will look similar to the following image.
+26. L'installatio est terminé quand vous obtenez ce texte.
 
 ![Setup script is finished.](images/SetupScriptDone.png)
 
-27. For some of the changes made by the script to take effect, exit the ssh session by typing `exit`.
+27. Le script a effectué quelques modifications il faut une fois de plus se déconnecter de la session ssh en tapant `exit`.
 
 ![Exit session.](images/ExitSession.png)
 
-28. Log back in to your guest. `ssh -i DJBlockchain.pem linux1@xxx.xxx.x.x`where x is the values for your guest's IP address. (Refer to step 15 if you need help finding it.)
+28. Reconnectez-vous en SSH. `ssh -i DJBlockchain.pem linux1@xxx.xxx.x.x`
 
 ![Log back in to your guest.](images/ReLogin.png)
 
-#### Verify the installation of Hyperledger Fabric and Hyperledger Composer
+#### Vérifier l'installation de l'Hyperledger Fabric et de l'Hyperledger Composer
 
-29. To see if your blockchain network is up and running, use the command `docker ps -a`. You should see 4 containers with image names like the ones shown below.
+29. Pour voir si votre réseau blockchain est fonctionnel, il faut utiliser la commande `docker ps -a`. Vous devriez voir 4 conteneurs avec des noms d'image comme montré ci-dessous.
 
 ![Running fabric containers.](images/RunningFabricContainers.png)
 
-30. Verify that the composer command line interface and other tools were installed by entering `composer -v`.
+30. Vérifier que l'interface composer et les autres outils sont prêt en entrant la commande `composer -v`.
 
 ![Verify Composer tools installation.](images/VerifyComposerCLI.png)
 
-31. Verify Composer Playground is running by looking for its process using the command, `ps -ef|grep playground`. 
+31. Vérifier que le Composer Playground est lancer en tapant la commande, `ps -ef|grep playground`. 
 
 ![Verify Composer Playground is running.](images/VerifyComposerPlaygroundRunning.png)
 
-32. Open a browser and enter `xxx.xxx.x.x:8080` into the address bar where the x's correspond to your Linux guest's IP address. 
+32. Ouvrir un navigateur et écrire `xxx.xxx.x.x:8080`.
 
     * **Note:** It is recommended to use Chrome as your browser for Hyperledger Composer Playground. It is also recommended that you open the Playground in a Incognito Window. This allows you to quickly clear cache and history if you start noticing odd behaviors.
     * **Note:** If you use Firefox, you cannot use it in Private mode. 
