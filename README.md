@@ -65,7 +65,7 @@ Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Communi
 ### Créer votre invité LinuxONE
 
 6- Retour sur votre navigateur, entrer vos User Id et votre mot de passe puis cliqué sur " Sign In ".
-    - Note : Une fois connecté, vous pouvez changer votre mot de passe en cliquant sur votre nom d'utilisateur en haut à droite et en séléctionnant " account settings " 
+- Note : Une fois connecté, vous pouvez changer votre mot de passe en cliquant sur votre nom d'utilisateur en haut à droite et en séléctionnant " account settings " 
 
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SignInUserIDPW.png)
 
