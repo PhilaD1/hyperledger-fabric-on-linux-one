@@ -1,5 +1,6 @@
 # Hyperledger Fabric and Hyperledger Composer sur LinuxONE
 
+Original english version : https://github.com/IBM/hyperledger-fabric-on-linux-one
 ### Architecture : 
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/FlowDiagram.png)
 
@@ -91,4 +92,24 @@ Dans cette partie du tutoriel, nous allons demander l'accès à LinuxONE Communi
 
 12- Selon votre ordinateur, vous allez peut être recevoir une fenetre vous demandant de sauvegarder le fichier.
 ![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SaveFile.png)
+
+13- Séléctionner maintenant votre clé SSH.
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SelectDJBlockchain.png)
+
+14- Vérifier les informations et cliquer sur Create
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/CreateGuest.png)
+
+15- Regarder le statut de la machine, la phase de démarrage passe par plusieurs étapes : 
+* Networking
+* Spawning 
+* Active
+
+/!\ Noter l'IP, nous en aurons besoin un peu plus tard
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/StartedGuest.png)
+
+16- Depuis l'invite de commande de votre ordinateur, se rendre dans le dossier ou se trouve votre clé SSH
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/DownloadDirectory.png)
+
+17- Modifier les permissions de la clé privée en entrant chmod 600 DJBlockchain.pem
+![N|Solid](https://github.com/IBM/hyperledger-fabric-on-linux-one/raw/master/images/SSHKeyPermissions.png)
 
